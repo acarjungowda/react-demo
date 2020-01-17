@@ -1,0 +1,70 @@
+
+Critical Redering Path 
+https://developer.mozilla.org/en-US/docs/Web/Performance/Critical_rendering_path
+
+https://varvy.com/pagespeed/display.html
+
+1. DOM 
+2. CSSDOM
+3. Render Tree
+4. Layout
+5. Paint
+
+CRP Optimization
+
+What is DOM (Document Object Model)?
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+
+https://bitsofco.de/what-exactly-is-the-dom/
+
+
+What is CSSOM (CSS Object Model)?
+
+
+Which Browsers Use Which Engines
+There are four main rendering engines that the most popular browsers use.
+
+WebKit: an open source engine used by Safari on OS X and iOS, as well as 
+        many other browsers on mobile devices, including the native Android browser;
+
+Blink: an open source engine based on WebKit, it powers Chrome, Opera, 
+        Amazon Silk and Android’s WebView (the browser that opens within apps);
+
+Gecko: an open source engine developed by the Mozilla Foundation, 
+        it is used by Firefox;
+
+Trident: a proprietary engine developed by Microsoft and used in Internet Explorer. 
+        The Microsoft Edge browser will use a newer version called EdgeHTML.
+
+Layout Engines or Browser Engines or Rendering Engines 
+1. Google Chrome
+2. Firefox
+3. Safari
+4. IE
+5. Edge
+6. Opera 
+
+Rendering Engine consists of two primary components 
+1. WebCore          - which contains core layout functionality
+2. JavaScriptCore   - where JavaScript interpreter V8 lives.
+
+
+What is JavaScript ?
+https://javascript.info/intro
+
+You need JavaScript Engine to run JS code 
+
+The browser has an embedded engine sometimes called "JavaScript virtual machine".
+
+
+Different JS Engines have different "codenames"
+V8                  - in Chrome and Opera
+SpiderMonkey        - in Firefox
+Trident and Chakra  - for different of IE 
+ChakraCode          - Edge 
+Nitro & SquirrelFish - for Safari
+
+
+
+Browser Engine vs JavaScript Engine 
+https://medium.com/@acparas/browsers-rendering-engines-js-engines-bea42b77a182
