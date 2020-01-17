@@ -1,0 +1,39 @@
+<html>
+    <script src="script.js"></script>
+    <script>
+        window.onload = initAll;
+        function initAll() {
+            var newElement01 = document.createElement("div");
+            newElement01.innerHTML = "I am added by JavaScript.";
+            var referenceNode = document.getElementsByTagName("p")[0];
+            //referenceNode.parentNode.insertBefore(newElement, referenceNode);
+            insertBefore(newElement01, referenceNode);
+
+            var newElement02 = document.createElement("div");
+            newElement02.innerHTML = "JavaScript Rocks!!";
+            insertAfter(newElement02, referenceNode);
+            //referenceNode.parentNode.insertBefore(newElement, referenceNode.nextSibling);
+
+            // document.getElementById("btn").onclick = onClickFunction;
+            // function() {
+            //     console.log("Button clicked");
+            //     alert("Button Clicked");
+            // };
+
+            function onClickFunction() {
+                console.log("Button clicked");
+                alert("Button Clicked");
+            }
+
+            $("#btn").onclick = function() {
+                $("#btn").innerHTML = "Clicked";
+            };
+
+        }
+    </script>
+    <body>
+        <h1>Hello Team!</h1>
+        <p>Welcome to React demo.</p>
+        <button id="btn">Click Me!</button>
+    </body>
+</html>

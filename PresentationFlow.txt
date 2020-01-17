@@ -1,0 +1,59 @@
+
+************ Introduction to DOM and JavaScript ************
+1. Start off with simple document and open it up in the browser
+
+2. Show the HTML code and the view source tab.
+
+3. Open up the Chrome Dev Tools and show the DOM like tree structure and explain about the DOM.
+
+4. Add JavaScript tag to the document 
+    4.1 Add document load function
+
+5. Inside the function add a new DOM element to the document 
+    5.1 Show how we can add elements to the DOM by just using the plainJS
+        --> Add an element before 
+
+    5.2 Similar to the above add and element to the DOM     
+        --> Add an element after
+
+6. Identify the repetative code and define two utility functions 
+    6.1 Create the following two functions
+        --> addBefore()
+        --> addAfter()
+
+    6.2 Show how we can reuse the functions 
+        --> identifying the useful block of code and creating methods that can be reused 
+
+7. Add an event listner to using just plainJS
+    7.1 Try using the nameless function
+
+    7.2 Create a separete function and assign this function name to the event listner
+
+8. Create jQuery equivalent variable
+    8.1 Demonstrate the jQuery lilke elements selection
+
+9. Move this utility JS code to a new file called "script.js" and add it to the document
+    --> show how we can use external JS file and use the methods defined in that external file
+
+10. Introduce jQuery 
+
+************ Introduction to jQuery ************
+
+1. Explain how to use the jQuery
+    1.1 Explain the concept of JavaScript library
+
+    1.2 Rewrite existing code using jQuery 
+
+2. Discuss pros and cons of jQuery 
+
+************ Introduction to React ************
+
+1. Explain React JS library 
+    1.1 Explain that React is also a JavaScript library just like jQuery 
+
+2. How to add React to an existing page 
+    2.1 Add React in One Minute
+    --> follow instruction in the guide https://reactjs.org/docs/add-react-to-a-website.html#add-react-in-one-minute    
+
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>React Demo</title>
+
+        <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+        <!-- <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script> -->
+        
+    </head>
+    <body>
+        <div id="hello"></div>
+
+        <div id="greetings"></div>
+
+        <div id="react-jsx"></div>
+
+        <div id="like_button_container"></div>
+
+        <script>
+            var e1 = React.createElement;
+            var container = document.getElementById('hello');
+            ReactDOM.render(e1('div', null, 'Hello World'), container);
+        </script>
+
+        <script>
+            // React without JSX 
+            class Hello extends React.Component {
+                render() {
+                    return React.createElement('div', null, `Welcome ${this.props.toWhat}`);
+                }
+            }
+
+            ReactDOM.render(
+                React.createElement(Hello, {toWhat: 'WT Team'}, null),
+                document.getElementById('greetings')
+            );
+        </script>
+
+        <script type="text/babel">
+            // React with JSX
+            class HelloJSX extends React.Component {
+                render() {
+                    return <div>Hello {this.props.toWhat}</div>;
+                }
+            }
+
+            ReactDOM.render(
+                <HelloJSX toWhat="React JSX" />,
+                document.getElementById("react-jsx")
+            );
+        </script>
+
+        <script src="like_button.js"></script>
+    </body>
+</html>
